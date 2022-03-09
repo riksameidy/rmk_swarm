@@ -14,7 +14,7 @@ Features:
 * swarmtools.eval_pop     --> function to evaluate given objective function for each individual in a population
 * swarmtools.print_pop     --> function to print for each individual in a population | Format -> [ ID , X , fitness ]
 * swarmtools.sort_pop     --> function to sort individual in a population based on its objective function
-* swarmtools.eval_pop     --> function to find best individual in a population
+* swarmtools.find_best     --> function to find best individual in a population
 
 #### Demo of some of the features:
 
