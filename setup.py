@@ -18,7 +18,7 @@ setuptools.setup(
     install_requires=['requests'],                  # list all packages that your package uses
     keywords=["pypi", "rmk_swarm", "Swarm"], #descriptive meta-data
     classifiers=[                                   # https://pypi.org/classifiers
-        'Development Status :: 1 - Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Documentation',
         'License :: OSI Approved :: MIT License',
