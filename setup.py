@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name='rmk_swarm',                           # should match the package folder
     packages=['rmk_swarm'],                     # should match the package folder
-    version='v0.0.1-alpha',                                # important for updates
+    version='0.0.1',                                # important for updates
     license='MIT',                                  # should match your chosen license
     description='Package for Helping Swarm Intelligence Modeling',
     long_description=long_description,              # loads your README.md
@@ -28,5 +28,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.9',
     ],
     
-    download_url="https://github.com/riksameidy/rmk_swarm/archive/refs/tags/v0.0.1-alpha.tar.gz",
+    download_url="https://github.com/riksameidy/rmk_swarm/archive/refs/tags/0.0.1.tar.gz",
 )
