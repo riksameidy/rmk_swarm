@@ -1,29 +1,30 @@
 import random
 
-def genGen(a,b):
+def gen_Gen(a,b):
   return random.uniform(a,b)
 
-def genIndividu(rn):
-  return [ genGen(rn[i][0], rn[i][1] ) for i in range(len(rn)) ]
+def gen_Indv(rn):
+  return [ gen_Gen(rn[i][0], rn[i][1] ) for i in range(len(rn)) ]
 
-def genPopulasi(n_populasi,rn):
-  return [ genIndividu(rn) for i in range(n_populasi) ]
+def gen_pop(n_populasi,rn):
+  return [ gen_Indv(rn) for i in range(n_populasi) ]
 
-def inisialisasiPopulasi(n_populasi,rn):
-  return list(map(  lambda x: [x[0],x[1],[] ] , enumerate( genPopulasi(n_populasi,rn) ) ) )
+def init_pop(n_populasi,rn):
+  return list(map(  lambda x: [x[0],x[1],[] ] , enumerate( gen_pop(n_populasi,rn) ) ) )
 
-def print_populasi(populasi):
+def print_pop(populasi):
   for p in populasi:
     print(p)
 
 def f_obj(X,f):
   return f(X)
 
-def evaluate_populasi(populasi,f):
+def eval_pop(populasi,f):
   return list( map( lambda x: [ x[0],x[1], f_obj( x[1], f ) ] , populasi  ) )
 
-def sort_populasi(populasi):
+def sort_pop(populasi):
   populasi.sort(key = lambda x:x[2] , reverse=True)
 
 def find_best(populasi):
+  sort_pop(populasi)
   return populasi[0]
